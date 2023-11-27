@@ -478,9 +478,11 @@ html{
     background-color: #ebebeb;
 }
 
+
 .iconDrop{
     position: relative;
 }
+
 .onlineDrop0{
     display: none;
 }
@@ -488,7 +490,7 @@ html{
     background-color: #ebebeb;
 }
 
-@media screen and (max-width: 100vw) {
+@media screen and (max-width: 580px) {
     body {
       overflow: hidden;
     }
