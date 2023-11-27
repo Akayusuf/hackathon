@@ -478,18 +478,9 @@ html{
     background-color: #ebebeb;
 }
 
-/* .customize{
-    display: none;
-} */
 .iconDrop{
     position: relative;
 }
-/* .closecuz1{
-    position: absolute;
-    top:163;
-    right:64;
-} */
-
 .onlineDrop0{
     display: none;
 }
@@ -497,7 +488,7 @@ html{
     background-color: #ebebeb;
 }
 
-@media all and (min-width: 480px) {
+@media screen and (max-width: 100vw) {
     body {
       overflow: hidden;
     }
