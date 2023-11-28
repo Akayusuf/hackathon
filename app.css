@@ -6,8 +6,9 @@ html{
     background-color:#f1f1f1;
     box-sizing: border-box;
     margin: 0;
-    max-width: 120rem;
-    width:100%;
+    width: 100%;
+    overflow: hidden;
+    /* display: block; */
     font-family: 'Inter', sans-serif;
   }
   
@@ -18,7 +19,7 @@ html{
     justify-content: space-between;
     align-items: center;
     height: 3.5rem;
-    max-width: 100%;
+    width: 100%;
   }
 
   .search-box{
@@ -309,8 +310,7 @@ html{
 }
 
 .trial{
-   max-width:60%;
-   min-width:45rem;
+    width: 60%;
     margin:0 auto;
     display: flex;
     align-items: center;
@@ -343,8 +343,7 @@ html{
 }
 
 .setupWrap{
-    max-width:60%;
-    min-width:45rem;
+    width:60%;
     margin:0 auto;
     border-radius: 1.1rem;
     background-color: #f7f7f7;
@@ -355,6 +354,7 @@ html{
 .setupGuide{
     font-weight: 600;
     margin-left: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .setupGuide0{
@@ -419,13 +419,6 @@ html{
     margin-left: 2.3rem;
 }
 
-/* .online-drop1,
-.online-drop2,
-.online-drop3,
-.online-drop4{
-    display: none;
-    background-color: #f7f7f7;
-} */
 .dropText1{
     font-size: 0.85rem;
     display: flex;
@@ -490,14 +483,19 @@ html{
     background-color: #ebebeb;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
     body {
       overflow: hidden;
+      /* width: 100%; */
     }
     .profile-name{
         display: none;
     }
 
+    nav{
+        overflow: hidden;
+        width:100%;
+    }
     .search-text{
         width: 15rem;
 
@@ -521,15 +519,21 @@ html{
     }
 
     .trial{
-        display: block;
-        width:20rem;
+        display: flex;
+        flex-wrap: wrap;
         font-size: 0.2rem;
         border-radius: 0;
+        width:100%;
+    }
+    .setupGuide0{
         width: 100%;
     }
-
+    
+    .setup{
+        width: 100%;
+    }
     .trialText{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding-top: 1.5rem;
     }
 
@@ -543,6 +547,7 @@ html{
 
     .setupWrap{
         border-radius: 0;
+        width: 100%;
     }
 
     .closecuz,
@@ -555,6 +560,6 @@ html{
     .online2,
     .online3,
     .online4{
-     width:68%;
+     width:100%;
     }
   }
