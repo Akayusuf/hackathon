@@ -26,15 +26,19 @@ const onlineDetails1 = document.querySelector(".onlineDetails1")
 const onlineDetails2 = document.querySelector(".onlineDetails2")
 const onlineDetails3 = document.querySelector(".onlineDetails3")
 const onlineDetails4 = document.querySelector(".onlineDetails4")
+const count = document.querySelector(".count")
+const checkBox = document.querySelector("c-box")
+const notiClick = document.querySelector(".noticlick")
 
 closecuz1.style.display = 'none'
-
-const openNoti = function () {
-    dropdownDisplay.style.display = 'block'    
-}
+count.textContent = 0;
 
 profileText.addEventListener('click', function (){
     profileWrap.classList.toggle ('iconDrop0')
+});
+
+notiClick.addEventListener('click', function (){
+    onlineDetails.classList.toggle ('box1')
 });
 
 iconOpen.addEventListener('click', function (){
