@@ -120,7 +120,7 @@ html{
     width:19rem;
     padding-top:1rem;
     padding-bottom:1rem;
-    display: inline-block;
+    display: block;
     margin-left:1rem;
     margin-bottom: 1rem;
     background-color: #f7f7f7;
@@ -385,15 +385,13 @@ html{
     background-color:#1c181d;
     height:0.3rem;
     width:1.6rem;
-    border-radius: 0.5rem;;
+    border-radius: 0.5rem;
     display: inline-block;
 }
 .online{
     margin-top: 2rem;
-    /* background-color: #e3e3e3; */
     margin-left:0.3rem;
     margin-right:0.3rem;
-   border-radius: 0.6rem;
 }
 .online,
 .online1,
@@ -479,6 +477,10 @@ html{
 .onlineDrop0{
     display: none;
 }
+
+.iconDrop0{
+    display: none;
+}
 .changeColor{
     background-color: #ebebeb;
 }
@@ -495,27 +497,62 @@ html{
     nav{
         overflow: hidden;
         width:100%;
+        /* justify-content: space-evenly; */
     }
     .search-text{
         width: 15rem;
-
     }
 
     .search-box{
         margin: 0 auto;
     }
     .dropdown{
-        margin-right: 10rem;
         position: absolute;
         top:3rem;
-        transform: translateX(-90%);
+        transform: translateX(-75%);
+    }
+    
+    .noti-wrap .noti-icon{
+        background-color: #1c181d;
+    }
+
+    .noti-wrap .dropdown{
+        width:19rem;
+    }
+
+    .noti-shade{
+        width: 96%;
+        margin: 0 auto;
+        margin-bottom: 0.6rem;
     }
 
     .nav-icon{
-        width:80;
-        height: 18;
-        display: inline-block;
-        margin-left: 0.5rem;
+        width:95;
+        height: 28;
+        display:block;
+        margin-left: 0.2rem;
+    }
+
+    .profileDropdown{
+        width:16rem;
+    }
+
+    .collection-content{
+        width:95%;
+    }
+
+    .coll-name,
+    .collection-name{
+        font-size: 0.6rem;
+    }
+
+    .collection-name{
+        margin-right:7rem;
+        margin-left:0;
+    }
+
+    .setupGuide{
+        width:22.2rem;
     }
 
     .trial{
@@ -560,6 +597,6 @@ html{
     .online2,
     .online3,
     .online4{
-     width:100%;
+     width:97.7%;
     }
   }

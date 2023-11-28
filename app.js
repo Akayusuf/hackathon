@@ -1,6 +1,9 @@
-const dropdownDisplay = document.querySelector(".dropdown");
-const colorChange = document.querySelector(".noti-icon")
+
+const iconOpen = document.querySelector(".noti-icon")
+const iconItem = document.querySelector(".noti-item")
+const notiShade = document.querySelector(".noti-shade")
 const profileWrap = document.querySelector(".profileWrap")
+const profileText = document.querySelector(".profile-text")
 const exitButton = document.querySelector(".trial")
 const closeExit = document.querySelector(".overlay")
 const closeOnline = document.querySelector(".onlineDrop")
@@ -13,6 +16,7 @@ const online3 = document.querySelector(".online3")
 const online2 = document.querySelector(".online2")
 const online1 = document.querySelector(".online1")
 const onlineDrop = document.querySelector(".onlineDrop0")
+const iconDrop = document.querySelector(".iconDrop0")
 const onlineDrop1 = document.querySelector(".onlineDrop1")
 const onlineDrop2 = document.querySelector(".onlineDrop2")
 const onlineDrop3 = document.querySelector(".onlineDrop3")
@@ -23,18 +27,20 @@ const onlineDetails2 = document.querySelector(".onlineDetails2")
 const onlineDetails3 = document.querySelector(".onlineDetails3")
 const onlineDetails4 = document.querySelector(".onlineDetails4")
 
-
-dropdownDisplay.style.display = 'none'
-profileWrap.style.display = 'none'
 closecuz1.style.display = 'none'
 
 const openNoti = function () {
     dropdownDisplay.style.display = 'block'    
 }
 
-const openProfile = function () {
-    profileWrap.style.display = 'block'
-}
+profileText.addEventListener('click', function (){
+    profileWrap.classList.toggle ('iconDrop0')
+});
+
+iconOpen.addEventListener('click', function (){
+    iconItem.classList.toggle ('iconDrop0')
+    notiShade.classList.toggle ('iconDrop0')
+});
 
 const closeNoti = function () {
     dropdownDisplay.style.display = 'none'
