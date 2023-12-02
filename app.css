@@ -74,7 +74,7 @@ html{
     text-align: center;
     border-radius: 0.5rem;
     cursor: pointer;
-    /* margin-top:2.2rem; */
+    z-index:1;
 }
 
 .noti-bell{
@@ -88,12 +88,14 @@ html{
     border-radius: 0.5rem;
     font-size: 1rem;
     display: inline-block;
+    z-index:1;
 }
 .dropdown{
     margin-right: 10rem;
     position: absolute;
     top:3rem;
     transform: translateX(-50%);
+    z-index:1;
 }
 
 .noti-icon:hover{
@@ -124,6 +126,7 @@ html{
     margin-left:1rem;
     margin-bottom: 1rem;
     background-color: #f7f7f7;
+    z-index:1;
     border-radius: 0.3rem;
 }
 
@@ -201,6 +204,7 @@ html{
     background-color: #f7f7f7;
     border-radius: 0.6rem;
     box-shadow: rgb(200, 200, 200) 2px 2px 5px;
+    z-index:1;
 }
 .collection-content{
     display: flex;
@@ -212,6 +216,7 @@ html{
     width:18rem;
     margin: 0 auto;
     margin-top:0.3rem;
+    z-index:1;
 }
 
 .coll-name,
@@ -245,6 +250,7 @@ html{
     margin-bottom: 0.4rem;
     width:18rem;
     margin-left:0.5rem;
+    z-index:1;
 }
 .stor{
     border-bottom: 1px solid #e3e3e3;
@@ -268,6 +274,7 @@ html{
     width:18rem;
     margin-left:0.5rem;
     display: inline-block;
+    z-index:1;
 }
 
 .david span{
@@ -407,7 +414,7 @@ html{
 .onlineDetails{
     display: flex;
     align-items: center;
-    margin-left: 0.7rem;
+    margin-left: 1.2rem;
     gap:0.3rem;
     cursor:default;
     position: relative;
@@ -493,18 +500,14 @@ html{
     cursor: pointer;
 }
 
+.noticlick0{
+    fill:black;
+    stroke-dasharray: 4 0;
+}
 .noticlick:hover{
     stroke-dasharray: 4 0;
 }
 
-.checkbox{
-    position: absolute;
-    top:2.3;
-}
-
-.c-box{
-    display: none;
-}
 @media screen and (max-width: 480px) {
     body {
       overflow: hidden;

@@ -21,24 +21,61 @@ const onlineDrop1 = document.querySelector(".onlineDrop1")
 const onlineDrop2 = document.querySelector(".onlineDrop2")
 const onlineDrop3 = document.querySelector(".onlineDrop3")
 const onlineDrop4 = document.querySelector(".onlineDrop4")
-const onlineDetails = document.querySelector(".onlineDetails")
+const onlineDetails = document.querySelector(".onlineDetails0")
 const onlineDetails1 = document.querySelector(".onlineDetails1")
 const onlineDetails2 = document.querySelector(".onlineDetails2")
 const onlineDetails3 = document.querySelector(".onlineDetails3")
 const onlineDetails4 = document.querySelector(".onlineDetails4")
 const count = document.querySelector(".count")
-const checkBox = document.querySelector("c-box")
-const notiClick = document.querySelector(".noticlick")
+const noticlick = document.querySelector(".noticlick")
+const noticlick1 = document.querySelector(".noticlick1")
+const noticlick2 = document.querySelector(".noticlick2")
+const noticlick3 = document.querySelector(".noticlick3")
+const noticlick4 = document.querySelector(".noticlick4")
 
 closecuz1.style.display = 'none'
 count.textContent = 0;
+
+let counter = count;
+
+// count.textContent = 10;
+// console.log(counter)
+// const checkBox = document.getElementById('c-box')
+
+// counter ( count.textContent ? 1 : -1);
+// console.log(count)
+// counter += (count ? 1 : -1);
+// console.log (counter);
+
+// for ( let i = 0; i < noticlick.length; i++){
+//     const addnum = noticlick[i];
+     
+//     addnum.addEventListener('click', () => {
+//         counter += (addnum.classList.contains('count') ? 1 : -1 )
+//         console.log(counter);
+//     })
+// }
+
 
 profileText.addEventListener('click', function (){
     profileWrap.classList.toggle ('iconDrop0')
 });
 
-notiClick.addEventListener('click', function (){
-    onlineDetails.classList.toggle ('box1')
+noticlick.addEventListener('click', function (){
+    noticlick.classList.toggle ('noticlick0');
+   (count.textContent == 1) ? + 1 : - 1;
+});
+noticlick1.addEventListener('click', function (){
+    noticlick1.classList.toggle ('noticlick0')
+});
+noticlick2.addEventListener('click', function (){
+    noticlick2.classList.toggle ('noticlick0')
+});
+noticlick3.addEventListener('click', function (){
+    noticlick3.classList.toggle ('noticlick0')
+});
+noticlick4.addEventListener('click', function (){
+    noticlick4.classList.toggle ('noticlick0')
 });
 
 iconOpen.addEventListener('click', function (){
